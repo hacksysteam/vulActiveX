@@ -1,0 +1,47 @@
+// vulActiveX.idl : IDL source for vulActiveX
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (vulActiveX.tlb) and marshalling code.
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(AB622ABB-0711-4702-955D-FB352FC4D55E),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IATLActivexControl : IDispatch{
+	[id(1)] HRESULT BufferOverflow([in] BSTR sBuffer, [out,retval] LONG* retVal);
+};
+
+[
+	uuid(C393674F-B96C-4E0A-AAD5-5E96860BEFB2),
+	version(1.0),
+]
+library vulActiveXLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(DA7A918C-B2E2-4E9B-9684-44BB46855036)		
+	]
+	dispinterface _IATLActivexControlEvents
+	{
+		properties:
+		methods:
+	};
+	[
+		uuid(C44CBF61-7844-4C4B-BC77-7643FD70848E),		
+		control
+	]
+	coclass ATLActivexControl
+	{
+		[default] interface IATLActivexControl;
+		[default, source] dispinterface _IATLActivexControlEvents;
+	};
+};
+

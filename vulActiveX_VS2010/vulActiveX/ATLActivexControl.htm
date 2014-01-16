@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>ATLActivexControl BufferOverflow</title>
+    <script language="javascript" type="text/javascript">
+
+        //Function to call BufferOverflow method from vulActiveX.dll
+        function BOF() {
+
+            //Assigns _vulActiveX variable to ATLActivexControl
+            var _vulActiveX = document.getElementById("ATLActivexControl");
+
+            //Pass the parameter to BufferOverflow function
+            _vulActiveX.BufferOverflow("HackSys Team - Panthera");
+        }
+
+    </script>
+</head>
+<body>
+    <object id="ATLActivexControl" classid="CLSID:C44CBF61-7844-4C4B-BC77-7643FD70848E">
+    </object>
+    <div>
+        <h1>
+            vulActiveX BufferOverflow</h1>
+        <div>
+            <h2>
+                HackSys Team - Panthera</h2>
+            <br />
+            <b>
+                <p>
+                    Website: <a href="http://hacksys.vfreaks.com/">http://hacksys.vfreaks.com/</a></p>
+                <p>
+                    Email: <a href="mailto:hacksysteam@hotmail.com">hacksysteam@hotmail.com</a></p>
+            </b>
+        </div>
+        <p>
+            Click on the button to invoke <b>BufferOverflow</b> method.</p>
+        <input type="button" onclick="BOF();" value="Invoke BufferOverflow" />
+    </div>
+</body>
+</html>

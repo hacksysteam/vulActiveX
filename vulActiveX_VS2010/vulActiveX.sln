@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vulActiveX", "vulActiveX\vulActiveX.vcxproj", "{FBC17F57-30A7-4600-9D1F-66BAF7F26D1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vulActiveXPS", "vulActiveX\vulActiveXPS.vcxproj", "{7B75EC12-AE81-45A6-B156-27BE83AB0332}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FBC17F57-30A7-4600-9D1F-66BAF7F26D1C} = {FBC17F57-30A7-4600-9D1F-66BAF7F26D1C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBC17F57-30A7-4600-9D1F-66BAF7F26D1C}.Debug|Win32.ActiveCfg = Release|Win32
+		{FBC17F57-30A7-4600-9D1F-66BAF7F26D1C}.Debug|Win32.Build.0 = Release|Win32
+		{FBC17F57-30A7-4600-9D1F-66BAF7F26D1C}.Release|Win32.ActiveCfg = Release|Win32
+		{FBC17F57-30A7-4600-9D1F-66BAF7F26D1C}.Release|Win32.Build.0 = Release|Win32
+		{7B75EC12-AE81-45A6-B156-27BE83AB0332}.Debug|Win32.ActiveCfg = Release|Win32
+		{7B75EC12-AE81-45A6-B156-27BE83AB0332}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
